@@ -1,0 +1,18 @@
+.Declaration{
+    padding: 24px;
+    background: #E0E0E0;
+    margin-top: 48px;
+}
+
+.declarationTitle{
+    color:#232323;
+    font-weight: 500;
+    font-size: 14px;
+    margin: 0;
+}
+
+.declarationContent{
+    color:#232323;
+    font-size: 15px;
+    margin-bottom: 0;
+}

@@ -1,0 +1,38 @@
+.InvoiceSummary{
+    display:grid;
+    grid-template-columns: 150px auto;
+    grid-template-rows: 30px 30px;
+    padding: 24px;
+    justify-content: end;
+}
+
+.totalLabel{
+    color:#C11E29;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.total{
+    color:#232323;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: right;
+}
+
+.paymentMethodLabel{
+    color:#C11E29;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.paymentMethod{
+    color:#232323;
+    font-weight: bold;
+    font-size: 16px;
+    background: none;
+    outline: none;
+    border: none;
+    text-align: right;
+    padding-top: 16px;
+    padding-bottom: 0;
+}

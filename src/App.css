@@ -1,38 +1,66 @@
-.App {
-  text-align: center;
+.App{
+  height: 100%;
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-template-columns: 15% auto auto 15%;
+  grid-row-gap:20px;
+  grid-template-areas:
+  '. . saveButtonContainer .'
+  '. invoiceCard invoiceCard .';
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.invoiceCard{
+  height: 100%;
+  grid-area:invoiceCard;
+  padding: 0;
+  margin-bottom: 16px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.addButton{ 
+  float:'right';
+  margin-top:'24px';
+  margin-bottom:'24px';
+  right:'15%';
+}
+
+.saveButtonContainer{
+  grid-area:saveButtonContainer;
+  margin-top: 16px;
+}
+
+.saveButton{
+  float:right;
+}
+
+@media screen and (max-width:1280px){
+  .invoiceCard{
+    height: 100%;
+  }
+
+  .App{
+    grid-template-columns: 10% auto auto 10%;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (max-width:1080px){
+  .invoiceCard{
+    height: 100%;
   }
-  to {
-    transform: rotate(360deg);
+
+  .App{
+    grid-template-columns: 5% auto auto 5%;
+  }
+}
+
+
+@media screen and (max-width:900px){
+  .invoiceCard{
+    margin: 10px 20px;
+    height: 100%;
+  }
+
+  .App{
+    grid-template-columns: 20px auto auto 20px;
   }
 }

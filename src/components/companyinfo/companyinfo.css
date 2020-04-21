@@ -1,0 +1,28 @@
+.companyInfo{
+    display:grid;
+    grid-template-columns: 80px auto;
+    grid-template-rows:20px auto;
+    grid-column-gap: 20px;
+    grid-template-areas: 
+    'logo name'
+    'logo address';
+}
+
+.name{
+    grid-area: name;
+    text-align: left;
+    font-size: 24px;
+    color: #333;
+    font-weight: bold;
+    margin: 0;
+}
+
+.logo{
+    grid-area: logo;
+}
+
+.address{
+    grid-area: address;
+    font-size: 16px;
+    color: #333;
+}

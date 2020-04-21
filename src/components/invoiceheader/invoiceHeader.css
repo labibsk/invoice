@@ -1,0 +1,162 @@
+.InvoiceHeader{
+    background:#C11E29;
+    color: #fff;
+    padding: 24px;
+    display: grid;
+    grid-template-columns: auto 90px 150px auto;
+    grid-template-rows: 30px 30px 1fr;
+    grid-column-gap: 30px;
+    grid-template-areas: 
+    'billedToLabel invoiceNoLabel issueDateLabel invoiceTotalLabel'
+    'billedTo invoiceNo issueDate invoiceTotal'
+    'billedToAddress . . .';
+}
+
+.InvoiceHeader p{
+    margin: 0;
+}
+
+.billedToLabel{
+    grid-area: billedToLabel;
+    color: #ccc;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.billedTo{
+    grid-area: billedTo;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.billedToAddress{
+    grid-area: billedToAddress;
+    font-size: 18px;
+}
+
+.invoiceNoLabel{
+    grid-area: invoiceNoLabel;
+    color: #ccc;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.invoiceNo{
+    grid-area: invoiceNo;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.issueDateLabel{
+    grid-area: issueDateLabel;
+    color: #ccc;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.issueDate{
+    grid-area: issueDate;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.invoiceTotalLabel{
+    grid-area: invoiceTotalLabel;
+    color: #ccc;
+    font-weight: bold;
+    font-size: 14px;
+    text-align: right;
+}
+
+.invoiceTotal{
+    grid-area: invoiceTotal;
+    color: #fff;
+    font-weight: bold;
+    font-size: 32px;
+    text-align: right;
+}
+
+
+.InvoiceHeader textarea, .InvoiceHeader input[type="text"] {
+    background: none;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-family: 'Montserrat';
+    resize: none;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+}
+
+.InvoiceHeader textarea::-webkit-input-placeholder , .InvoiceHeader input[type="text"]::-webkit-input-placeholder{
+    color: #aaa;
+    font-weight: normal;
+}
+
+.InvoiceHeader textarea::-ms-input-placeholder , .InvoiceHeader input[type="text"]::-ms-input-placeholder{
+    color: #aaa;
+    font-weight: normal;
+} 
+.InvoiceHeader textarea::placeholder, .InvoiceHeader input[type="text"]::placeholder{
+    color: #aaa;
+    font-weight: normal;
+}
+.InvoiceHeader textarea::-moz-placeholder, .InvoiceHeader input[type="text"]::-moz-placeholder  {
+    color: #aaa;
+    font-weight: normal;
+}
+
+@media screen and (max-width:900px){
+    .InvoiceHeader{
+        grid-template-columns: 90px 90px auto auto;
+        grid-template-rows: 30px 30px auto 40px 30px;
+        grid-template-areas: 
+        'billedToLabel billedToLabel billedToLabel invoiceTotalLabel'
+        'billedTo . . invoiceTotal'
+        'billedToAddress billedToAddress billedToAddress invoiceTotal'
+        'invoiceNoLabel issueDateLabel . .'
+        'invoiceNo issueDate . .'
+        ;
+    }
+
+    .invoiceNoLabel{
+        padding-top: 15px;
+    }
+
+    .issueDateLabel{
+        padding-top: 15px;
+    }
+    
+}
+
+@media screen and (max-width:560px){
+    .InvoiceHeader{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 30px 30px auto 40px 30px;
+        grid-template-areas: 
+        'billedToLabel billedToLabel .'
+        'billedTo billedTo billedTo'
+        'billedToAddress billedToAddress billedToAddress'
+        'invoiceNoLabel issueDateLabel invoiceTotalLabel'
+        'invoiceNo issueDate invoiceTotal';
+    }
+
+    .invoiceNoLabel{
+        padding-top: 15px;
+    }
+
+    .issueDateLabel{
+        padding-top: 15px;
+    }
+
+    .invoiceTotal{
+        font-size: 18px;
+    }
+
+    .invoiceTotalLabel{
+        padding-top: 15px;
+    }
+    
+}

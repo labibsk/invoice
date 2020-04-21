@@ -1,0 +1,12 @@
+.Header{
+    display: grid;
+    padding: 24px;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto auto auto;
+    grid-column-gap: 20px;
+}
+
+.invoiceTitle{
+    margin: 0;
+    text-align: right;
+}
