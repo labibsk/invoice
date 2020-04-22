@@ -12,10 +12,7 @@ import PictureAsPdfIcon from '@material-ui/icons/PictureAsPdf';
 import SaveButton from './SaveButton'
 import AlertDialog from './components/alertdialog/AlertDialog';
 import WarningSnackbar from './components/warningsnackbar/WarningSnackbar';
-import { pdf } from '@react-pdf/renderer';
-import InvoicePdf from './components/invoicepdf/InvoicePdf'
 import './App.css';
-import saveSync from 'save-file'
 import DownloadDialog from './components/downloaddialog/DownloadDialog'
 
 class App extends React.Component {
@@ -28,6 +25,8 @@ class App extends React.Component {
       total:0,
       customerName:'',
       customerAddress:'',
+      customerCityState:'',
+      customerCountryZipCode:'',
       message:'',
       negativeAction:'',
       positiveAction:'',
@@ -35,7 +34,8 @@ class App extends React.Component {
       actionId:-1,
       id:-1,
       items:[],
-      date:new Date(),
+      issueDate:new Date(),
+      dueDate:new Date(),
       erroropen:false,
       error:'',
       paymentMethod:'',
@@ -92,12 +92,11 @@ class App extends React.Component {
       return;
     }
     this.setState({...this.state, downloadopen:true})
-
   }
 
   addItem(){
     const items = this.state.items.slice();
-    items.push({ id: new Date().getUTCMilliseconds(), name:"", quantity:1, ratePer: 0.0, discount:0.0, amount: 0.0 });
+    items.push({ id: new Date().getTime(), name:"", quantity:1, ratePer: 0.0, discount:0.0, amount: 0.0 });
     this.setState({...this.state, items:items});
   }
 
@@ -105,8 +104,12 @@ class App extends React.Component {
     this.setState({ ...this.state, id: id, open:true, message:'Do you wan\'t to delete this item?', actionId:1, negativeAction:'No', positiveAction:'Yes'})
   }
 
-  onDateChange(date){
-    this.setState({...this.state, date:date});
+  onIssueDateChange(date){
+    this.setState({...this.state, issueDate:date});
+  }
+
+  onDueDateChange(date){
+    this.setState({...this.state, dueDate:date});
   }
 
   onErrorClose(){
@@ -119,6 +122,14 @@ class App extends React.Component {
 
   onAddressChanged(event){
     this.setState({...this.state, customerAddress:event.target.value})
+  }
+  
+  onCityStateChanged(event){
+    this.setState({...this.state, customerCityState:event.target.value})
+  }
+  
+  onCountryZipCodeChanged(event){
+    this.setState({...this.state, customerCountryZipCode:event.target.value})
   }
 
   onUpdateName(id, itemName){
@@ -166,6 +177,7 @@ class App extends React.Component {
   handleDownloadClose(){
     this.setState({...this.state, downloadopen:false})
   }
+
   render(){
     return (
       <div className="App">
@@ -179,12 +191,18 @@ class App extends React.Component {
           <Header className="header"/>
           <InvoiceHeader 
                   className="invoiceHeader"
-                  onDateChange={(date)=>this.onDateChange(date)} 
+                  onIssueDateChange={(date)=>this.onIssueDateChange(date)} 
+                  onDueDateChange={(date)=>this.onDueDateChange(date)} 
                   total={this.state.total}
                   invoiceNo={this.state.invoiceNo}
-                  date={this.state.date}
+                  issueDate={this.state.issueDate}
+                  dueDate={this.state.dueDate}
                   name={this.state.customerName}
                   address={this.state.customerAddress}
+                  countryZipCode={this.state.customerCountryZipCode}
+                  onCountryZipCodeChanged={this.onCountryZipCodeChanged.bind(this)}
+                  cityState={this.state.customerCityState}
+                  onCityStateChanged={this.onCityStateChanged.bind(this)}
                   onNameChanged={this.onNameChanged.bind(this)}
                   onAddressChanged={this.onAddressChanged.bind(this)}/>
           <ItemTable 

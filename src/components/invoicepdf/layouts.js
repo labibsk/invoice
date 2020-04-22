@@ -1,7 +1,7 @@
 import styled from '@react-pdf/styled-components'
 
 export const FlexHorizontal = styled.View`
-        width:100%;
+        width:100vw;
         display:flex;
         flex-direction:row;
 `
@@ -17,7 +17,6 @@ export const InvoiceHeader = styled.View`
 export const FlexVertical = styled.View`
         display:flex;
         flex-direction:column;
-        margin-right:20pt;
 `
 
 export const DeclarationFooter = styled.View`
@@ -26,5 +25,5 @@ export const DeclarationFooter = styled.View`
         flex-direction:column;
         background:#F3F3F3;
         padding:20pt;
-        margin-top:30ft;
+        margin-top:40pt;
 `

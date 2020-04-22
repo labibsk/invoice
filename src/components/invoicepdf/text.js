@@ -1,13 +1,13 @@
 import styled from '@react-pdf/styled-components'
 import { Font } from '@react-pdf/renderer'
 
-Font.register({family:'Montserrat', src:'http://localhost:3000/fonts/Montserrat-Regular.ttf', fontStyle: 'normal', fontWeight: 'normal'})
-Font.register({family:'Montserrat', src:'http://localhost:3000/fonts/Montserrat-Medium.ttf', fontStyle: 'normal', fontWeight: 'medium'})
-Font.register({family:'Montserrat', src:'http://localhost:3000/fonts/Montserrat-Bold.ttf', fontStyle: 'normal', fontWeight: 'bold'})
+Font.register({family:'Montserrat', src:'https://ismail-creatvt.github.io/invoicegen/fonts/Montserrat-Regular.ttf', fontStyle: 'normal', fontWeight: 'normal'})
+Font.register({family:'Montserrat', src:'https://ismail-creatvt.github.io/invoicegen/fonts/Montserrat-Medium.ttf', fontStyle: 'normal', fontWeight: 'medium'})
+Font.register({family:'Montserrat', src:'https://ismail-creatvt.github.io/invoicegen/fonts/Montserrat-Bold.ttf', fontStyle: 'normal', fontWeight: 'bold'})
 
 export const LabelText = styled.Text`
         font-family:'Montserrat';
-        font-size:10pt;
+        font-size:12pt;
         color:#e0e0e0;
         font-weight:bold;
 `
@@ -26,7 +26,6 @@ export const InvoiceTitle = styled.Text`
         font-weight:bold;
         flex-grow:1;
         margin-top:4pt;
-        margin-left:40pt;
 `
 
 export const CompanyAddress = styled.Text`
@@ -39,7 +38,7 @@ export const CompanyAddress = styled.Text`
 export const ValueText = styled.Text`
         color:#fff;
         font-family:'Montserrat';
-        font-size:14pt;
+        font-size:16pt;
         font-weight:bold;
         margin-top:4pt;
 `
@@ -47,7 +46,7 @@ export const ValueText = styled.Text`
 export const InvoiceTotalText = styled.Text`
         color:#fff;
         font-family:'Montserrat';
-        font-size:20pt;
+        font-size:25pt;
         font-weight:bold;
         margin-top:4pt;
 `
@@ -56,7 +55,7 @@ export const BilledToAddressText = styled.Text`
         width:250pt;
         color:#fff;
         font-family:'Montserrat';
-        font-size:12pt;
+        font-size:14pt;
         font-weight:bold;
         margin-top:4pt;
 `
