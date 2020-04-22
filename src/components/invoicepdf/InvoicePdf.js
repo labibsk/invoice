@@ -41,7 +41,7 @@ class InvoicePdf extends Component {
                             <FlexVertical>
                                 <CompanyName style={{marginTop:'8pt'}}>Digital Wolf</CompanyName>
                                 <CompanyAddress style={{marginTop:'8pt', width:'350pt'}}>
-                                    DigitalWolf, 12840 Pennybridge Dr Bridgeton
+                                    12840 Pennybridge Dr Bridgeton
                                 </CompanyAddress>
                                 <CompanyAddress>
                                     Missouri, California

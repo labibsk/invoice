@@ -8,7 +8,7 @@ const CompanyInfo = ()=>{
         <div className="companyInfo">
             <img src={logo} className="logo" height="62px" alt="Logo"/>
             <h3 className="name">Digital Wolf</h3>
-            <p className="address">DigitalWolf, 12840 Pennybridge Dr Bridgeton, Missouri, California, 63044, United States</p>
+            <p className="address">12840 Pennybridge Dr Bridgeton<br/> Missouri, California<br/> 63044, United States</p>
         </div>
     )
 }
