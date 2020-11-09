@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import {Document, Page, Image } from '@react-pdf/renderer'
-import logo from '../../assets/digital_wolf_logo.png'
+import logo from '../../assets/edigital_wolf_logo.png'
 import {format} from 'date-fns'
 import {
     Table,
@@ -10,7 +10,7 @@ import {
     TableHeader,
     TableHeaderCell,
     TableHeaderCellLong } from './table'
-import { 
+import {
     CompanyName,
     CompanyAddress,
     InvoiceTitle,
@@ -62,13 +62,13 @@ class InvoicePdf extends Component {
                                 <ValueText>
                                     {this.props.data.customerName}
                                 </ValueText>
-                                <BilledToAddressText>                                
+                                <BilledToAddressText>
                                     {this.props.data.customerAddress}
                                 </BilledToAddressText>
-                                <BilledToAddressText>                                
+                                <BilledToAddressText>
                                     {this.props.data.customerCityState}
                                 </BilledToAddressText>
-                                <BilledToAddressText>                                
+                                <BilledToAddressText>
                                     {this.props.data.customerCountryZipCode}
                                 </BilledToAddressText>
                                 <FlexHorizontal style={{marginTop:'16pt'}}>
@@ -98,7 +98,7 @@ class InvoicePdf extends Component {
                                     </FlexVertical>
                                 </FlexHorizontal>
                             </FlexVertical>
-                            
+
                             <FlexVertical style={{alignItems:'end', flexGrow:1}}>
                                 <LabelText>
                                     Invoice Total
