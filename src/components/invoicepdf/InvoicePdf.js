@@ -39,15 +39,15 @@ class InvoicePdf extends Component {
                         <FlexHorizontal style={{padding:'20pt'}}>
                             <Image src={logo} style={{width:'60pt', height:'47pt'}}/>
                             <FlexVertical>
-                                <CompanyName style={{marginTop:'8pt'}}>Digital Wolf</CompanyName>
+                                <CompanyName style={{marginTop:'8pt'}}>EDigital Wolf</CompanyName>
                                 <CompanyAddress style={{marginTop:'8pt', width:'350pt'}}>
-                                    12840 Pennybridge Dr Bridgeton
+                                    Shri Siddhi Behind SBI Bank, Sasane Nagar
                                 </CompanyAddress>
                                 <CompanyAddress>
-                                    Missouri, California
+                                    Hadapsar, Pune
                                 </CompanyAddress>
                                 <CompanyAddress>
-                                    63044, United States
+                                    Maharashtra 411028
                                 </CompanyAddress>
                             </FlexVertical>
                             <FlexVertical style={{flexGrow:'1' , alignItems:'end'}}>
