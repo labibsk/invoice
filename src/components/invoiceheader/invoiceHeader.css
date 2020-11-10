@@ -6,7 +6,7 @@
     grid-template-columns: auto 90px 100px 100px auto;
     grid-template-rows: 30px 30px 1fr;
     grid-column-gap: 30px;
-    grid-template-areas: 
+    grid-template-areas:
     'billedToLabel invoiceNoLabel issueDateLabel dueDateLabel invoiceTotalLabel'
     'billedTo invoiceNo issueDate dueDate invoiceTotal'
     'billedToAddress . . . .';
@@ -118,7 +118,7 @@
 .InvoiceHeader input[type="text"]::-ms-input-placeholder{
     color: #aaa;
     font-weight: normal;
-} 
+}
 .InvoiceHeader input[type="text"]::placeholder{
     color: #aaa;
     font-weight: normal;
@@ -132,7 +132,7 @@
     .InvoiceHeader{
         grid-template-columns: 90px 90px auto auto;
         grid-template-rows: 30px 30px auto 40px 30px;
-        grid-template-areas: 
+        grid-template-areas:
         'billedToLabel billedToLabel billedToLabel invoiceTotalLabel'
         'billedTo . . invoiceTotal'
         'billedToAddress billedToAddress billedToAddress invoiceTotal'
@@ -152,19 +152,21 @@
     .dueDateLabel{
         padding-top: 15px;
     }
-    
+
 }
 
 @media screen and (max-width:560px){
     .InvoiceHeader{
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 30px 30px auto 40px 30px;
-        grid-template-areas: 
+        grid-template-rows: 30px 30px auto 40px 30px 40px 30px;
+        grid-template-areas:
         'billedToLabel billedToLabel .'
         'billedTo billedTo billedTo'
         'billedToAddress billedToAddress billedToAddress'
-        'invoiceNoLabel issueDateLabel invoiceTotalLabel'
-        'invoiceNo issueDate invoiceTotal';
+        'invoiceTotalLabel invoiceTotalLabel .'
+        'invoiceTotal invoiceTotal .'
+        'invoiceNoLabel issueDateLabel dueDateLabel'
+        'invoiceNo issueDate dueDate';
     }
 
     .invoiceNoLabel{
@@ -177,12 +179,14 @@
 
     .invoiceTotal{
         font-size: 18px;
+        text-align: left;
     }
 
     .invoiceTotalLabel{
         padding-top: 15px;
+        text-align: left;
     }
-    
+
     .dueTotal{
         font-size: 18px;
     }
@@ -190,5 +194,6 @@
     .dueTotalLabel{
         padding-top: 15px;
     }
-    
+
+
 }

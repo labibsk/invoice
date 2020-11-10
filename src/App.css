@@ -16,7 +16,7 @@
   margin-bottom: 16px;
 }
 
-.addButton{ 
+.addButton{
   float:'right';
   margin-top:'24px';
   margin-bottom:'24px';
@@ -56,11 +56,11 @@
 
 @media screen and (max-width:900px){
   .invoiceCard{
-    margin: 10px 20px;
+    margin: 0px 0px;
     height: 100%;
   }
 
   .App{
-    grid-template-columns: 20px auto auto 20px;
+    grid-template-columns: 0px auto auto 0px;
   }
 }

@@ -4,9 +4,32 @@
     grid-template-columns: auto 1fr;
     grid-template-rows: auto auto auto;
     grid-column-gap: 20px;
+    grid-template-areas:
+    'company invoiceTitle'
+    'company .'
+    'company .';
 }
 
 .invoiceTitle{
     margin: 0;
     text-align: right;
+    grid-area: invoiceTitle;
+}
+
+.company{
+  grid-area: company;
+}
+
+@media screen and (max-width:560px){
+  .Header{
+    grid-template-columns: 1fr;
+    grid-template-rows: 60px 1fr;
+    grid-column-gap: 20px;
+    grid-template-areas:
+    'invoiceTitle'
+    'company';
+  }
+  .invoiceTitle{
+    text-align:left;
+  }
 }
