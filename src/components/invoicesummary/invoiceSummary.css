@@ -36,3 +36,34 @@
     padding-top: 16px;
     padding-bottom: 0;
 }
+
+@media screen and (max-width:480px){
+  .InvoiceSummary{
+      justify-content: initial;
+      padding: 16px;
+  }
+
+  .totalLabel{
+      font-size: 14px;
+  }
+
+  .total{
+      font-size: 14px;
+  }
+
+  .paymentMethodLabel{
+      font-size: 14px;
+  }
+
+  .paymentMethod{
+      color:#232323;
+      font-weight: bold;
+      font-size: 14px;
+      background: none;
+      outline: none;
+      border: none;
+      text-align: right;
+      padding-top: 16px;
+      padding-bottom: 0;
+  }
+}
