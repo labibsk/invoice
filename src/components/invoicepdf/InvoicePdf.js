@@ -42,6 +42,7 @@ class InvoicePdf extends Component {
                                 <CompanyName style={{marginTop:'8pt'}}>EDigital Wolf</CompanyName>
                                 <CompanyAddress style={{marginTop:'8pt', width:'350pt'}}>
                                     12840 Pennybridge Dr Bridgeton
+                                </CompanyAddress>
                                 <CompanyAddress>
                                     Missouri, California
                                 </CompanyAddress>
