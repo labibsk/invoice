@@ -92,6 +92,13 @@
     font-size: 32px;
     text-align: right;
 }
+.invoiceTotal select {
+    background:none;
+    border:none;
+    color:#fff;
+    font-size:32px;
+    font-weight:bold;
+}
 
 .billedToAddress input[type="text"]{
     font-size: 18px;

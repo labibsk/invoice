@@ -104,7 +104,7 @@ class InvoicePdf extends Component {
                                     Invoice Total
                                 </LabelText>
                                 <InvoiceTotalText>
-                                    $ {this.props.data.total.toFixed(2).toString()}
+                                    {this.props.data.currency} {this.props.data.total.toFixed(2).toString()}
                                 </InvoiceTotalText>
                             </FlexVertical>
                         </InvoiceHeader>
@@ -136,13 +136,13 @@ class InvoicePdf extends Component {
                                             {item.quantity}
                                         </TableCell>
                                         <TableCell>
-                                            $ {item.ratePer.toFixed(2).toString()}
+                                            {this.props.data.currency} {item.ratePer.toFixed(2).toString()}
                                         </TableCell>
                                         <TableCell>
-                                            $ {item.discount.toFixed(2).toString()}
+                                            {this.props.data.currency} {item.discount.toFixed(2).toString()}
                                         </TableCell>
                                         <TableCell>
-                                            $ {item.amount.toFixed(2).toString()}
+                                            {this.props.data.currency} {item.amount.toFixed(2).toString()}
                                         </TableCell>
                                     </TableRow>
                                 ))
@@ -159,7 +159,7 @@ class InvoicePdf extends Component {
                             </FlexVertical>
                             <FlexVertical style={{flexBasis:'15vw', alignItems:'end', flexGrow:'1', alignSelf:'right', paddingRight:'15ft'}}>
                                 <FinalValueText>
-                                    $ {this.props.data.total.toFixed(2).toString()}
+                                    {this.props.data.currency} {this.props.data.total.toFixed(2).toString()}
                                 </FinalValueText>
                                 <FinalValueText>
                                     {this.props.data.paymentMethod}

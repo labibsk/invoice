@@ -56,7 +56,12 @@ export default class InvoiceHeader extends React.Component {
                 <p className="dueDateLabel">Due Date</p>
                 <p className="dueDate" onClick={(event)=>this.onDueDateClick(event)}>{format(this.props.dueDate, "dd/MM/yyyy")}</p>
                 <p className="invoiceTotalLabel">Invoice Total</p>
-                <p className="invoiceTotal">$ {this.props.total.toFixed(2).toString()}</p>
+                <p className="invoiceTotal">
+                    <select value={this.props.currency} onChange={this.props.onCurrencyChanged}>
+                        <option value="$">$</option>
+                        <option value="£">£</option>
+                        <option value="€">€</option>
+                    </select> {this.props.total.toFixed(2).toString()}</p>
                 <DatePopover 
                         anchor={this.state.issueDateAnchor} 
                         onDateChange={this.onIssueDateChange.bind(this)} 

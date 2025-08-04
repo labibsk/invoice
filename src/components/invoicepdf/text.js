@@ -1,9 +1,9 @@
 import styled from '@react-pdf/styled-components'
 import { Font } from '@react-pdf/renderer'
 
-Font.register({family:'Montserrat', src:'https://ismail-creatvt.github.io/invoicegen/fonts/Montserrat-Regular.ttf', fontStyle: 'normal', fontWeight: 'normal'})
-Font.register({family:'Montserrat', src:'https://ismail-creatvt.github.io/invoicegen/fonts/Montserrat-Medium.ttf', fontStyle: 'normal', fontWeight: 'medium'})
-Font.register({family:'Montserrat', src:'https://ismail-creatvt.github.io/invoicegen/fonts/Montserrat-Bold.ttf', fontStyle: 'normal', fontWeight: 'bold'})
+Font.register({family:'Montserrat', src:'/invoice/fonts/Montserrat-Regular.ttf', fontStyle: 'normal', fontWeight: 'normal'})
+Font.register({family:'Montserrat', src:'/invoice/fonts/Montserrat-Medium.ttf', fontStyle: 'normal', fontWeight: 'medium'})
+Font.register({family:'Montserrat', src:'/invoice/fonts/Montserrat-Bold.ttf', fontStyle: 'normal', fontWeight: 'bold'})
 
 export const LabelText = styled.Text`
         font-family:'Montserrat';
