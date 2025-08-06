@@ -189,6 +189,10 @@
         text-align: left;
     }
 
+    .invoiceTotal select {
+        font-size:18px;
+    }
+
     .invoiceTotalLabel{
         padding-top: 15px;
         text-align: left;

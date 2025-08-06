@@ -58,6 +58,11 @@
   .invoiceCard{
     margin: 0px 0px;
     height: 100%;
+    border-radius:0 !important;
+  }
+
+  .saveButtonContainer {
+    margin-right: 16px;
   }
 
   .App{
