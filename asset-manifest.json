@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/invoice/static/css/main.a7b4a318.chunk.css",
+    "main.css": "/invoice/static/css/main.98eb02b4.chunk.css",
     "main.js": "/invoice/static/js/main.bfed421a.chunk.js",
     "main.js.map": "/invoice/static/js/main.bfed421a.chunk.js.map",
     "runtime-main.js": "/invoice/static/js/runtime-main.40dc4efe.js",
@@ -8,16 +8,16 @@
     "static/js/2.e993e481.chunk.js": "/invoice/static/js/2.e993e481.chunk.js",
     "static/js/2.e993e481.chunk.js.map": "/invoice/static/js/2.e993e481.chunk.js.map",
     "index.html": "/invoice/index.html",
-    "precache-manifest.84efe96bef7b7567eb8436fac7a48c53.js": "/invoice/precache-manifest.84efe96bef7b7567eb8436fac7a48c53.js",
+    "precache-manifest.a54e84dbfa8459246d41b4d98acebcab.js": "/invoice/precache-manifest.a54e84dbfa8459246d41b4d98acebcab.js",
     "service-worker.js": "/invoice/service-worker.js",
-    "static/css/main.a7b4a318.chunk.css.map": "/invoice/static/css/main.a7b4a318.chunk.css.map",
+    "static/css/main.98eb02b4.chunk.css.map": "/invoice/static/css/main.98eb02b4.chunk.css.map",
     "static/js/2.e993e481.chunk.js.LICENSE.txt": "/invoice/static/js/2.e993e481.chunk.js.LICENSE.txt",
     "static/media/edigital_wolf_logo.png": "/invoice/static/media/edigital_wolf_logo.fb235184.png"
   },
   "entrypoints": [
     "static/js/runtime-main.40dc4efe.js",
     "static/js/2.e993e481.chunk.js",
-    "static/css/main.a7b4a318.chunk.css",
+    "static/css/main.98eb02b4.chunk.css",
     "static/js/main.bfed421a.chunk.js"
   ]
 }
